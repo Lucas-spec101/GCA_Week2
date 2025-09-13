@@ -1,51 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity: Water</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fffaf0;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffc907;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    /* Hero Section */
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 20px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .donate-box {
+      background-color: #fff;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border: 1px solid #ddd;
+      max-width: 350px;
+    }
+
+    .donate-box span {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .donate-box button {
+      background-color: #ffc907;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero img {
+      max-width: 400px;
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    /* Footer / Tracker */
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    footer h3 {
+      margin: 0;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 14px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Footer Badge */
+    .project-badge {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      font-size: 14px;
+      color: #000;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-text {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <!-- This is just for the little yellow section on the top. -->
-    </header>
+  <header>
+    <img src="https://via.placeholder.com/40x40.png?text=Logo" alt="Charity Water Logo" />
+    <h1>charity: water</h1>
+  </header>
 
-    <!-- Logo -->
-    <section class="logo">
-        <img src="images/charitywater_logo_horizontal_BlackText.png" alt="Charity: Water logo">
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Water is life.<br>Lets share it.</h2>
+      <p>Millions live without access to clean water.<br>
+         Help one project, one family, one life at a time.</p>
+      <div class="donate-box">
+        <span>Every $40 helps 1 person get access to clean water.</span>
+        <button>Spread Life 💧</button>
+      </div>
+    </div>
+    <img src="https://via.placeholder.com/400x250.png?text=Hero+Image" alt="Children with water" />
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Water is life.<br>Lets share it.</h1>
-            <p>Millions live without access to clean water.<br>
-               Help one project, one family, one life at a time.</p>
-            <button class="cta">Spread Life 💧</button>
-            <p class="note">Every $40 helps 1 person get access to clean water.</p>
-        </div>
-        <div class="hero-image">
-            <img src="images/heroImage.png" alt="Children smiling with water containers">
-        </div>
-    </section>
-
-    <!-- Donation Tracker -->
-    <section class="tracker">
-        <div class="tracker-text">
-            <h2>Track all your donations.</h2>
-            <p>We provide tracking for your donations. All of our projects are shared through photos, coordinates, and real stories.</p>
-        </div>
-        <div class="tracker-box">
-            <p>Project 59 of 80</p>
-            <p><strong>$4000+</strong> Raised of $10,000 Goal</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 charity: water | Bringing clean water to families in need</p>
-    </footer>
+  <footer>
+    <h3>Track all your donations.</h3>
+    <p>We provide tracking for your donations. All of our projects are shared through photos, coordinates, and real stories.</p>
+    <div class="project-badge">
+      <strong>Project 59 of 80</strong><br>
+      $4000+ Raised of $10000 Goal
+    </div>
+  </footer>
 </body>
 </html>
