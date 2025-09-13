@@ -98,9 +98,8 @@ header {
 }
 
 .hero-image img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-top: 20px;
+  max-width: 400px;  /* limits width */
+  height: auto;      /* keeps proportions */
 }
 
 .note {
