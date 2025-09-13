@@ -99,6 +99,8 @@ header {
 
 .hero-image img {
   max-width: 400px;  /* limits width */
+  border-radius: 8px;
+  margin-top: 20px;
   height: auto;      /* keeps proportions */
 }
 
