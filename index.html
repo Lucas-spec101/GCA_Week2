@@ -94,10 +94,14 @@
       font-size: 0.9rem;
     }
   </style>
+  <script>
+    function openDonationLink() {
+      window.open("https://www.charitywater.org/", "_blank");
+    }
+  </script>
 </head>
 <body>
   <header>
-    charity: water
   </header>
 
   <div class="logo-section">
@@ -111,7 +115,7 @@
          Help one project, one family, one life at a time.</p>
       <div class="cta-box">
         <span>Every $40 helps 1 person get access to clean water.</span>
-        <button>Spread Life 💧</button>
+        <button onclick="openDonationLink()">Spread Life 💧</button>
       </div>
     </div>
     <img src="images/heroImage.png" alt="Hero Image">
