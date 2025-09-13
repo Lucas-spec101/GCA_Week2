@@ -1,172 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charity: Water Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Water Landing Page</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fffaf0;
-      color: #000;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      background-color: #fefbea;
+      color: #333;
     }
-
-    /* Header */
     header {
-      background-color: #ffc907;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
+      background-color: #ffcc00;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
     }
-
-    header h1 {
-      font-size: 20px;
-      margin: 0;
-      font-weight: normal;
-    }
-
-    /* Logo Section */
     .logo-section {
-      background-color: #fff;
+      background: #fff;
       text-align: center;
       padding: 20px;
     }
-
     .logo-section img {
-      height: 60px;
+      max-width: 200px;
     }
-
-    /* Hero Section */
     .hero {
-      flex: 1;
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
       justify-content: space-between;
-      padding: 40px 20px;
+      align-items: center;
+      padding: 80px 10%;
     }
-
     .hero-text {
-      max-width: 500px;
+      max-width: 45%;
     }
-
-    .hero-text h2 {
-      font-size: 36px;
+    .hero-text h1 {
+      font-size: 3rem;
       font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .hero-text p {
-      font-size: 14px;
       margin-bottom: 20px;
     }
-
-    .donate-box {
-      background-color: #fff;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .hero-text p {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+    .cta-box {
+      background: #fff;
+      border-radius: 10px;
       padding: 10px;
-      border: 1px solid #ddd;
-      max-width: 350px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
     }
-
-    .donate-box span {
-      font-size: 14px;
-      color: #555;
+    .cta-box span {
+      font-size: 0.9rem;
+      color: #666;
     }
-
-    .donate-box button {
-      background-color: #ffc907;
+    .cta-box button {
+      background-color: #ffcc00;
       border: none;
       padding: 10px 20px;
-      border-radius: 4px;
+      font-size: 1rem;
       font-weight: bold;
+      border-radius: 8px;
       cursor: pointer;
     }
-
     .hero img {
-      max-width: 400px;
-      border-radius: 6px;
-      width: 100%;
+      max-width: 55%;
+      border-radius: 10px;
     }
-
-    /* Footer / Tracker */
     footer {
-      background-color: #000;
-      color: #fff;
-      padding: 30px 20px;
+      background: black;
+      color: white;
+      padding: 20px;
       text-align: center;
-      position: relative;
+      margin-top: 40px;
     }
-
-    footer h3 {
-      margin: 0;
-      font-size: 24px;
+    footer h2 {
+      font-size: 1.5rem;
       margin-bottom: 10px;
     }
-
     footer p {
-      font-size: 14px;
-      max-width: 600px;
+      font-size: 1rem;
+      max-width: 700px;
       margin: 0 auto;
     }
-
-    /* Footer Badge */
-    .project-badge {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
+    .project-tracker {
       background: #fff;
+      color: #333;
+      display: inline-block;
+      margin-top: 20px;
       padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-      font-size: 14px;
-      color: #000;
-    }
-
-    @media(max-width: 768px) {
-      .hero {
-        flex-direction: column;
-      }
-      .hero-text {
-        margin-bottom: 20px;
-      }
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1></h1>
+    charity: water
   </header>
 
-  <section class="logo-section">
-    <img src="images/charitywater_logo_horizontal_BlackText.png" alt="Charity Water Logo" />
-  </section>
+  <div class="logo-section">
+    <img src="images/charitywater_logo_horizontal_BlackText.png" alt="Logo">
+  </div>
 
   <section class="hero">
     <div class="hero-text">
-      <h2>Water is life.<br>Lets share it.</h2>
+      <h1>Water is life.<br> Let's share it.</h1>
       <p>Millions live without access to clean water.<br>
          Help one project, one family, one life at a time.</p>
-      <div class="donate-box">
+      <div class="cta-box">
         <span>Every $40 helps 1 person get access to clean water.</span>
         <button>Spread Life 💧</button>
       </div>
     </div>
-    <img src="images/heroImage.png" alt="Children with water" />
+    <img src="images/heroImage.png" alt="Hero Image">
   </section>
 
   <footer>
-    <h3>Track all your donations.</h3>
+    <h2>Track all your donations.</h2>
     <p>We provide tracking for your donations. All of our projects are shared through photos, coordinates, and real stories.</p>
-    <div class="project-badge">
-      <strong>Project 59 of 80</strong><br>
+    <div class="project-tracker">
+      Project 59 of 80<br>
       $4000+ Raised of $10000 Goal
     </div>
   </footer>
