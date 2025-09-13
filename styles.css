@@ -46,16 +46,12 @@ header {
 }
 
 .logo {
-
+  height: 30px;
+  margin-right: 8px;
   display: flex;
   align-items: center;
   font-size: 1.5em;
   font-weight: bold;
-}
-
-.logo-img {
-  width: 30px;
-  margin-right: 10px;
 }
 
 /* Hero Section */
